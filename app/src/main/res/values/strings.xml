@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">Controle de NF</string>
+    <string name="prompt_email">E-mail</string>
+    <string name="prompt_password">Senha</string>
+    <string name="action_sign_in">Entrar ou cadastrar</string>
+    <string name="action_sign_in_short">Entrar</string>
+    <string name="invalid_username">E-mail inválido</string>
+    <string name="invalid_password">A senha deve ter mais de 5 caracteres</string>
+    <string name="login_failed">"Falha ao entrar"</string>
+    <string name="login_failed_invalid_username">Não foi possível entrar com este e-mail</string>
+    <string name="login_failed_invalid_password">Senha inválida</string>
+
+    <string name="facebook_application_id" translatable="false">967882007207128</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">967882007207128</string>
+    <string name="web_client_id" translatable="false">628262276403-laoa0k36gkivdcshkkkv6p6oibngub5e.apps.googleusercontent.com</string>
+
+    <string name="automatic_sign_in">Entrar automaticamente</string>
+    <string name="user_not_found">"Usuário não encontrado"</string>
+
+    <string name="prompt_password_repeat">Repita a senha</string>
+    <string name="prompt_name">Nome</string>
+    <string name="prompt_company_identify">Cnpj</string>
+    <string name="prompt_company_name">Nome da empresa</string>
+    <string name="prompt_phone">Telefone</string>
+    <string name="button_save">Salvar</string>
+    <string name="button_delete">Deletar</string>
+    <string name="button_cancel">Cancelar</string>
+    <string name="title_user_registration">Registro de usuário</string>
+
+    <string name="required_field">Campo requerido</string>
+    <string name="invalid_field">Campo inválido</string>
+    <string name="no_match_passwords">As senhas não estão iguais</string>
+    <string name="register_username_and_password_error">Não foi possível registrar o usuário</string>
+    <string name="invoices">Notas fiscais</string>
+    <string name="expense">Despesas</string>
+    <string name="title_home">Home</string>
+    <string name="title_invoices">Notas fiscais</string>
+    <string name="prompt_invoice_value">Valor da nota fiscal</string>
+    <string name="prompt_invoice_number">Número da nota fiscal</string>
+    <string name="prompt_invoice_month">Mês de competência</string>
+    <string name="prompt_invoice_received">Data de recebimento</string>
+    <string name="prompt_invoice_description">Descrição do serviço prestado</string>
+    <string name="title_invoice_registration">Registro de nota fiscal</string>
+    <string name="prompt_search_invoice_company">Informe o Cnpj da empresa</string>
+    <string name="save_failed">"Falha ao salvar"</string>
+    <string name="invoice_not_found">Nota fiscal não encontrada</string>
+    <string name="delete_fail">Não foi possível deletar o registro</string>
+    <string name="confirm">Sim</string>
+    <string name="dialog_button_ok">Ok</string>
+    <string name="cancel">Cancelar</string>
+    <string name="delete_title">Deletar</string>
+    <string name="delete_message">Deseja deletar o registro?</string>
+    <string name="menu_item_settings">Preferências</string>
+    <string name="menu_item_invoices_history">Histórico de notas fiscais</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="preferences_title">Preferências</string>
+    <string name="max_mei">Limite máximo de faturamento MEI</string>
+    <string name="success_process">Salvo com sucesso</string>
+    <string name="error_process">Não foi possível processar a solicitação</string>
+
+</resources>

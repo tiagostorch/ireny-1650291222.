@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "628262276403",
+    "project_id": "nf-control-mei",
+    "storage_bucket": "nf-control-mei.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:628262276403:android:0a5be78159603b22858246",
+        "android_client_info": {
+          "package_name": "com.ireny.nf_control_mei"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "628262276403-81tiu57rmto620hdvleuhoibo5cefa38.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ireny.nf_control_mei",
+            "certificate_hash": "8190ec2f6c608e645ca93e81ff6bc5991d0dfb29"
+          }
+        },
+        {
+          "client_id": "628262276403-rsgr3svcn2u8m6k1jiqij5udk8m83pre.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ireny.nf_control_mei",
+            "certificate_hash": "50d8a7794e85b056d73e5340f7ec8bfa1f251ac9"
+          }
+        },
+        {
+          "client_id": "628262276403-laoa0k36gkivdcshkkkv6p6oibngub5e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2fJ1xV7jYaK0DvkMpYyCCYhGZjcV4HRk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "628262276403-laoa0k36gkivdcshkkkv6p6oibngub5e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

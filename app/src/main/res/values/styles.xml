@@ -1,0 +1,51 @@
+<resources>
+
+    <style name="Widget.Theme.Nfcontrolmei.ActionBar.Fullscreen" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <style name="Widget.Theme.Nfcontrolmei.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/black_overlay</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
+
+    <style name="Splash" >
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">10pt</item>
+    </style>
+
+    <style name="FormTop" >
+        <item name="android:background">@color/purple_700</item>
+        <item name="android:paddingHorizontal">16dp</item>
+    </style>
+
+    <style name="FormContent" >
+        <item name="android:paddingHorizontal">16dp</item>
+        <item name="android:paddingVertical">16dp</item>
+    </style>
+
+    <style name="FormTitle" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="FormSubTitle" parent="TextAppearance.AppCompat.Widget.ActionBar.Subtitle">
+        <item name="android:textColor">@color/light_blue_900</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+    </style>
+
+    <style name="UserText" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="Menu">
+        <item name="android:background">@drawable/bg_menu</item>
+    </style>
+
+    <style name="MenuItem" >
+        <item name="android:paddingVertical">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+</resources>

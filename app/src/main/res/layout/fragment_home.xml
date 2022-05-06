@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.register_user.RegisterUserFragment"
+    android:layout_gravity="center_vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="4dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:padding="8dp"
+            android:src="@drawable/ic_menu" />
+
+        <TextView
+            android:id="@+id/username"
+            style="@style/UserText"
+            android:padding="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/logout_button"
+            tools:text="usuario"  />
+
+        <ImageView
+            android:id="@+id/logout_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:src="@drawable/ic_logout"
+            android:layout_alignParentEnd="true"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginVertical="16dp"
+            android:layout_below="@id/menu">
+            <TextView
+                android:id="@+id/progress_bar_char_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Faturamento"
+                android:layout_alignParentTop="true" />
+            <ProgressBar
+                android:id="@+id/progress_bar_char1"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="40"
+                android:layout_below="@id/progress_bar_char_title"
+                android:layout_above="@id/progress_bar_char1_bottom"/>
+            <TextView
+                android:id="@+id/progress_bar_char1_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="R$ 1500,00"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/progress_bar_char_title"
+                android:layout_above="@id/progress_bar_char1_bottom"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/progress_bar_char1_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/progress_bar_char_title"
+                android:layout_above="@id/progress_bar_char1_bottom"
+                tools:text="R$ 81.000,00"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/progress_bar_char1_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Disponivel R$ 1500,00"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/menu_content"
+            style="@style/Menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/menu"
+            android:visibility="gone"
+            tools:visibility="visible">
+            <LinearLayout
+                android:id="@+id/menu_item_invoice_history"
+                style="@style/MenuItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_history" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?attr/textAppearanceListItem"
+                    android:text="@string/menu_item_invoices_history"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/menu_item_settings"
+                style="@style/MenuItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_settings" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?attr/textAppearanceListItem"
+                    android:text="@string/menu_item_settings"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_new_invoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:layout_marginBottom="16dp"
+        app:srcCompat="@android:drawable/ic_input_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
